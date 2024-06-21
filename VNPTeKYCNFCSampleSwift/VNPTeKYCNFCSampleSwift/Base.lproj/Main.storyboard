@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5cg-xa-oz9">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="gM7-q4-mRL">
+            <objects>
+                <viewController id="5cg-xa-oz9" customClass="ViewController" customModule="VNPTeKYCNFCSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DRr-qC-9ir">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysj-Zn-4d4">
+                                <rect key="frame" x="0.0" y="47" width="390" height="919"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0f-gq-Wtn">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="651.66666666666663"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tích hợp SDK VNPT eKYC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tB-aC-2Gl">
+                                                <rect key="frame" x="16" y="32" width="358" height="21.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upo-aQ-dQe">
+                                                <rect key="frame" x="16" y="443.66666666666669" width="358" height="48"/>
+                                                <color key="backgroundColor" red="0.0" green="0.6588235294" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="lkM-IB-RAs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="MRZ → NFC">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tích hợp SDK VNPT NFC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcC-ee-s1j">
+                                                <rect key="frame" x="16" y="325.66666666666669" width="358" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Q6-oY-bXg">
+                                                <rect key="frame" x="16" y="213.66666666666669" width="358" height="48"/>
+                                                <color key="backgroundColor" red="0.0" green="0.6588235294" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="Xv2-SL-TQY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Thực hiện kiểm tra khuôn mặt">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfU-zN-JjD">
+                                                <rect key="frame" x="16" y="149.66666666666666" width="358" height="48"/>
+                                                <color key="backgroundColor" red="0.0" green="0.6588235294" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="l4V-pa-jp2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Thực hiện OCR giấy tờ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pd-8P-pnm">
+                                                <rect key="frame" x="16" y="571.66666666666663" width="358" height="48"/>
+                                                <color key="backgroundColor" red="0.0" green="0.6588235294" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="pnj-Fc-K8T"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Only NFC Without UI">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryW-KK-hzh">
+                                                <rect key="frame" x="16" y="85.666666666666657" width="358" height="48"/>
+                                                <color key="backgroundColor" red="0.0" green="0.6588235294" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="HeG-1j-BrS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="eKYC luồng đầy đủ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZf-Jf-eje">
+                                                <rect key="frame" x="16" y="507.66666666666663" width="358" height="48"/>
+                                                <color key="backgroundColor" red="0.0" green="0.6588235294" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="uMr-qi-lLs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Only NFC">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpr-Ud-Nn5">
+                                                <rect key="frame" x="16" y="379.66666666666669" width="358" height="48"/>
+                                                <color key="backgroundColor" red="0.0" green="0.6588235294" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="F0k-aC-gRA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="QR → NFC">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="0Pd-8P-pnm" secondAttribute="trailing" constant="16" id="0Kv-HD-LFF"/>
+                                            <constraint firstItem="0Pd-8P-pnm" firstAttribute="leading" secondItem="P0f-gq-Wtn" secondAttribute="leading" constant="16" id="0oq-yk-knP"/>
+                                            <constraint firstItem="0Pd-8P-pnm" firstAttribute="top" secondItem="xZf-Jf-eje" secondAttribute="bottom" constant="16" id="38x-oe-8I4"/>
+                                            <constraint firstAttribute="bottom" secondItem="0Pd-8P-pnm" secondAttribute="bottom" constant="32" id="59L-ZD-Ued"/>
+                                            <constraint firstItem="ryW-KK-hzh" firstAttribute="leading" secondItem="P0f-gq-Wtn" secondAttribute="leading" constant="16" id="5CI-ou-SuW"/>
+                                            <constraint firstAttribute="trailing" secondItem="ryW-KK-hzh" secondAttribute="trailing" constant="16" id="5XC-sp-7uS"/>
+                                            <constraint firstItem="xcC-ee-s1j" firstAttribute="top" secondItem="0Q6-oY-bXg" secondAttribute="bottom" constant="64" id="8nG-jq-kIB"/>
+                                            <constraint firstItem="xZf-Jf-eje" firstAttribute="leading" secondItem="P0f-gq-Wtn" secondAttribute="leading" constant="16" id="9JQ-LW-PDO"/>
+                                            <constraint firstAttribute="trailing" secondItem="0Q6-oY-bXg" secondAttribute="trailing" constant="16" id="9Ov-9X-J9K"/>
+                                            <constraint firstItem="xcC-ee-s1j" firstAttribute="leading" secondItem="P0f-gq-Wtn" secondAttribute="leading" constant="16" id="9ef-Fh-7fH"/>
+                                            <constraint firstItem="1tB-aC-2Gl" firstAttribute="leading" secondItem="P0f-gq-Wtn" secondAttribute="leading" constant="16" id="CAy-L7-uYY"/>
+                                            <constraint firstAttribute="trailing" secondItem="upo-aQ-dQe" secondAttribute="trailing" constant="16" id="CiZ-gB-Gv8"/>
+                                            <constraint firstItem="0Q6-oY-bXg" firstAttribute="top" secondItem="FfU-zN-JjD" secondAttribute="bottom" constant="16" id="DTL-dW-u2C"/>
+                                            <constraint firstAttribute="trailing" secondItem="jpr-Ud-Nn5" secondAttribute="trailing" constant="16" id="Ddo-Ck-O9C"/>
+                                            <constraint firstItem="jpr-Ud-Nn5" firstAttribute="top" secondItem="xcC-ee-s1j" secondAttribute="bottom" constant="32" id="JiB-yS-LHE"/>
+                                            <constraint firstAttribute="trailing" secondItem="xcC-ee-s1j" secondAttribute="trailing" constant="16" id="KjL-sf-LfH"/>
+                                            <constraint firstItem="upo-aQ-dQe" firstAttribute="top" secondItem="jpr-Ud-Nn5" secondAttribute="bottom" constant="16" id="SE8-X0-4an"/>
+                                            <constraint firstItem="1tB-aC-2Gl" firstAttribute="top" secondItem="P0f-gq-Wtn" secondAttribute="top" constant="32" id="TqQ-fD-ce9"/>
+                                            <constraint firstItem="0Q6-oY-bXg" firstAttribute="leading" secondItem="P0f-gq-Wtn" secondAttribute="leading" constant="16" id="WaB-wc-Ggf"/>
+                                            <constraint firstItem="ryW-KK-hzh" firstAttribute="top" secondItem="1tB-aC-2Gl" secondAttribute="bottom" constant="32" id="adu-fR-msc"/>
+                                            <constraint firstAttribute="trailing" secondItem="1tB-aC-2Gl" secondAttribute="trailing" constant="16" id="b6M-30-042"/>
+                                            <constraint firstAttribute="trailing" secondItem="FfU-zN-JjD" secondAttribute="trailing" constant="16" id="bA7-Bf-Vl4"/>
+                                            <constraint firstItem="xZf-Jf-eje" firstAttribute="top" secondItem="upo-aQ-dQe" secondAttribute="bottom" constant="16" id="g1s-Px-hNL"/>
+                                            <constraint firstItem="upo-aQ-dQe" firstAttribute="leading" secondItem="P0f-gq-Wtn" secondAttribute="leading" constant="16" id="mRk-88-buj"/>
+                                            <constraint firstItem="FfU-zN-JjD" firstAttribute="leading" secondItem="P0f-gq-Wtn" secondAttribute="leading" constant="16" id="oRk-2p-RKq"/>
+                                            <constraint firstItem="FfU-zN-JjD" firstAttribute="top" secondItem="ryW-KK-hzh" secondAttribute="bottom" constant="16" id="pGN-rT-Z8R"/>
+                                            <constraint firstItem="jpr-Ud-Nn5" firstAttribute="leading" secondItem="P0f-gq-Wtn" secondAttribute="leading" constant="16" id="yIJ-Cj-Wab"/>
+                                            <constraint firstAttribute="trailing" secondItem="xZf-Jf-eje" secondAttribute="trailing" constant="16" id="zlw-Y3-DnR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="P0f-gq-Wtn" firstAttribute="centerX" secondItem="5G6-hM-2Ts" secondAttribute="centerX" id="0Rh-wn-ksE"/>
+                                    <constraint firstItem="P0f-gq-Wtn" firstAttribute="top" secondItem="GGO-LI-5in" secondAttribute="top" id="P8J-kf-dUC"/>
+                                    <constraint firstItem="P0f-gq-Wtn" firstAttribute="leading" secondItem="GGO-LI-5in" secondAttribute="leading" id="oN5-FE-pc3"/>
+                                    <constraint firstItem="P0f-gq-Wtn" firstAttribute="bottom" secondItem="GGO-LI-5in" secondAttribute="bottom" id="sYm-Li-nZO"/>
+                                    <constraint firstItem="P0f-gq-Wtn" firstAttribute="trailing" secondItem="GGO-LI-5in" secondAttribute="trailing" id="toK-sj-DKt"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="GGO-LI-5in"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="5G6-hM-2Ts"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FSf-xB-yKf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FSf-xB-yKf" firstAttribute="bottom" secondItem="ysj-Zn-4d4" secondAttribute="bottom" id="Gb3-MD-IxQ"/>
+                            <constraint firstItem="ysj-Zn-4d4" firstAttribute="top" secondItem="FSf-xB-yKf" secondAttribute="top" id="NCB-Fm-hyM"/>
+                            <constraint firstItem="ysj-Zn-4d4" firstAttribute="leading" secondItem="FSf-xB-yKf" secondAttribute="leading" id="lEU-Ww-ySx"/>
+                            <constraint firstItem="FSf-xB-yKf" firstAttribute="trailing" secondItem="ysj-Zn-4d4" secondAttribute="trailing" id="nUO-Jc-sVS"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="390" height="1000"/>
+                    <connections>
+                        <outlet property="buttonFace" destination="0Q6-oY-bXg" id="BT2-Mr-Bzs"/>
+                        <outlet property="buttonFullEkyc" destination="ryW-KK-hzh" id="60V-jC-POd"/>
+                        <outlet property="buttonOCR" destination="FfU-zN-JjD" id="vbm-60-ixB"/>
+                        <outlet property="buttonStart_MRZ_NFC" destination="upo-aQ-dQe" id="jXv-A6-KHr"/>
+                        <outlet property="buttonStart_Only_NFC" destination="xZf-Jf-eje" id="5T2-If-lGA"/>
+                        <outlet property="buttonStart_Only_NFC_WithoutUI" destination="0Pd-8P-pnm" id="gjc-TX-B4V"/>
+                        <outlet property="buttonStart_QR_NFC" destination="jpr-Ud-Nn5" id="gng-rR-0fP"/>
+                        <outlet property="labelTitleEKYC" destination="1tB-aC-2Gl" id="Fpj-Xb-maN"/>
+                        <outlet property="labelTitleNFC" destination="xcC-ee-s1j" id="3Tc-Dr-R2r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gem-e7-Cx0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1091" y="58"/>
+        </scene>
+        <!--Result Ekyc View Controller-->
+        <scene sceneID="unr-YM-nEF">
+            <objects>
+                <viewController storyboardIdentifier="ResultEkyc" id="sY0-0B-AIz" customClass="ResultEkycViewController" customModule="VNPTeKYCSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyT-XZ-QfS"/>
+                        <viewControllerLayoutGuide type="bottom" id="gt7-Jh-TUX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DXU-tx-oih">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="B2z-R4-ACR">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tv0-z5-YXb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gt7-Jh-TUX" firstAttribute="top" secondItem="B2z-R4-ACR" secondAttribute="bottom" id="UqB-zu-P4q"/>
+                            <constraint firstAttribute="trailing" secondItem="B2z-R4-ACR" secondAttribute="trailing" id="aSG-tO-qyv"/>
+                            <constraint firstItem="B2z-R4-ACR" firstAttribute="leading" secondItem="DXU-tx-oih" secondAttribute="leading" id="awK-w1-abg"/>
+                            <constraint firstItem="B2z-R4-ACR" firstAttribute="top" secondItem="jyT-XZ-QfS" secondAttribute="bottom" id="uTV-h1-07D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableViewResult" destination="B2z-R4-ACR" id="Cdi-IB-o3y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oUj-1H-f07" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1885" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
