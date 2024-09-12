@@ -290,14 +290,6 @@ extension ViewController {
             // Đặt giá trị DELEGATE để nhận kết quả trả về
             objICMainNFCReader.icMainNFCDelegate = self
             
-            // Thông tin bộ token cho NFC
-            objICMainNFCReader.accessToken = ""
-            objICMainNFCReader.tokenId = ""
-            objICMainNFCReader.tokenKey = ""
-            // Nếu thực hiện upload ảnh lên server, bổ sung thêm bộ token cho eKYC
-            objICMainNFCReader.tokenIdEKYC = ""
-            objICMainNFCReader.tokenKeyEKYC = ""
-            
             // Giá trị này xác định ngôn ngữ được sử dụng trong SDK.
             // - icnfc_vi: Tiếng Việt
             // - icnfc_en: Tiếng Anh
@@ -333,7 +325,7 @@ extension ViewController {
             objICMainNFCReader.isGetPostcodeMatching = false
             
             // bật tính năng xác minh thông tin thẻ với C06 Bộ công an. lấy giá trị tại ICNFCSaveData.shared().verifyNFCCardResult
-            objICMainNFCReader.isEnableCheckChipClone = false
+            // objICMainNFCReader.isEnableCheckChipClone = false
             
             // bật hoặc tắt tính năng Call Service. Mặc định false (Thực hiện bật chức năng Call Service)
             objICMainNFCReader.isEnableUploadAvatarImage = false
@@ -357,7 +349,7 @@ extension ViewController {
             // bật tính năng xác định thẻ có bị giả mạo hoặc sao chép hoặc ghi đè thông tin hay không. Mặc định false
             // Giá trị xác thực Active Authentication tại ICNFCSaveData.shared().statusActiveAuthentication
             // Giá trị xác thực Chip Authentication tại ICNFCSaveData.shared().statusChipAuthentication
-            objICMainNFCReader.isEnableCheckChipClone = true
+            objICMainNFCReader.isEnableVerifyChip = true
             
             
             
@@ -467,14 +459,6 @@ extension ViewController {
             // Đặt giá trị DELEGATE để nhận kết quả trả về
             objICMainNFCReader.icMainNFCDelegate = self
             
-            // Thông tin bộ token cho NFC
-            objICMainNFCReader.accessToken = ""
-            objICMainNFCReader.tokenId = ""
-            objICMainNFCReader.tokenKey = ""
-            // Nếu thực hiện upload ảnh lên server, bổ sung thêm bộ token cho eKYC
-            objICMainNFCReader.tokenIdEKYC = ""
-            objICMainNFCReader.tokenKeyEKYC = ""
-            
             // Giá trị này xác định ngôn ngữ được sử dụng trong SDK.
             // - icnfc_vi: Tiếng Việt
             // - icnfc_en: Tiếng Anh
@@ -492,7 +476,7 @@ extension ViewController {
             // - MRZCode: Quét mã MRZ sau đó đọc thông tin thẻ Chip NFC
             // - NFCReader: Nhập thông tin cho Số thẻ, ngày sinh và ngày hết hạn
             // => sau đó đọc thông tin thẻ Chip NFC
-            objICMainNFCReader.cardReaderStep = MRZCode
+            // objICMainNFCReader.cardReaderStep = MRZCode
             // Trường hợp cardReaderStep là NFCReader thì mới cần truyền 03 thông tin idNumberCard, birthdayCard, expiredDateCard
             // Số giấy tờ căn cước, là dãy số gồm 12 ký tự.
             // objICMainNFCReader.idNumberCard = self.idNumber
@@ -510,7 +494,7 @@ extension ViewController {
             objICMainNFCReader.isGetPostcodeMatching = false
             
             // bật tính năng xác minh thông tin thẻ với C06 Bộ công an. lấy giá trị tại ICNFCSaveData.shared().verifyNFCCardResult
-            objICMainNFCReader.isEnableCheckChipClone = false
+            // objICMainNFCReader.isEnableCheckChipClone = false
             
             // bật hoặc tắt tính năng Call Service. Mặc định false (Thực hiện bật chức năng Call Service)
             objICMainNFCReader.isEnableUploadAvatarImage = false
@@ -534,7 +518,7 @@ extension ViewController {
             // bật tính năng xác định thẻ có bị giả mạo hoặc sao chép hoặc ghi đè thông tin hay không. Mặc định false
             // Giá trị xác thực Active Authentication tại ICNFCSaveData.shared().statusActiveAuthentication
             // Giá trị xác thực Chip Authentication tại ICNFCSaveData.shared().statusChipAuthentication
-            objICMainNFCReader.isEnableCheckChipClone = true
+            objICMainNFCReader.isEnableVerifyChip = true
             
             
             
@@ -649,14 +633,6 @@ extension ViewController {
             // Đặt giá trị DELEGATE để nhận kết quả trả về
             objICMainNFCReader.icMainNFCDelegate = self
             
-            // Thông tin bộ token cho NFC
-            objICMainNFCReader.accessToken = ""
-            objICMainNFCReader.tokenId = ""
-            objICMainNFCReader.tokenKey = ""
-            // Nếu thực hiện upload ảnh lên server, bổ sung thêm bộ token cho eKYC
-            objICMainNFCReader.tokenIdEKYC = ""
-            objICMainNFCReader.tokenKeyEKYC = ""
-            
             // Giá trị này xác định ngôn ngữ được sử dụng trong SDK.
             // - icnfc_vi: Tiếng Việt
             // - icnfc_en: Tiếng Anh
@@ -692,7 +668,7 @@ extension ViewController {
             objICMainNFCReader.isGetPostcodeMatching = false
             
             // bật tính năng xác minh thông tin thẻ với C06 Bộ công an. lấy giá trị tại ICNFCSaveData.shared().verifyNFCCardResult
-            objICMainNFCReader.isEnableCheckChipClone = false
+            // objICMainNFCReader.isEnableCheckChipClone = false
             
             // bật hoặc tắt tính năng Call Service. Mặc định false (Thực hiện bật chức năng Call Service)
             objICMainNFCReader.isEnableUploadAvatarImage = false
@@ -716,7 +692,7 @@ extension ViewController {
             // bật tính năng xác định thẻ có bị giả mạo hoặc sao chép hoặc ghi đè thông tin hay không. Mặc định false
             // Giá trị xác thực Active Authentication tại ICNFCSaveData.shared().statusActiveAuthentication
             // Giá trị xác thực Chip Authentication tại ICNFCSaveData.shared().statusChipAuthentication
-            objICMainNFCReader.isEnableCheckChipClone = true
+            objICMainNFCReader.isEnableVerifyChip = true
             
             
             
@@ -829,14 +805,6 @@ extension ViewController {
             // Đặt giá trị DELEGATE để nhận kết quả trả về
             objICMainNFCReader.icMainNFCDelegate = self
             
-            // Thông tin bộ token cho NFC
-            objICMainNFCReader.accessToken = ""
-            objICMainNFCReader.tokenId = ""
-            objICMainNFCReader.tokenKey = ""
-            // Nếu thực hiện upload ảnh lên server, bổ sung thêm bộ token cho eKYC
-            objICMainNFCReader.tokenIdEKYC = ""
-            objICMainNFCReader.tokenKeyEKYC = ""
-            
             // Thuộc tính quy định việc đọc thông tin NFC
             // - QRCode: Quét mã QR sau đó đọc thông tin thẻ Chip NFC
             // - MRZCode: Quét mã MRZ sau đó đọc thông tin thẻ Chip NFC
@@ -860,7 +828,7 @@ extension ViewController {
             objICMainNFCReader.isGetPostcodeMatching = false
             
             // bật tính năng xác minh thông tin thẻ với C06 Bộ công an. lấy giá trị tại ICNFCSaveData.shared().verifyNFCCardResult
-            objICMainNFCReader.isEnableCheckChipClone = false
+            // objICMainNFCReader.isEnableCheckChipClone = false
             
             // bật hoặc tắt tính năng Call Service. Mặc định false (Thực hiện bật chức năng Call Service)
             objICMainNFCReader.isEnableUploadAvatarImage = false
@@ -884,7 +852,7 @@ extension ViewController {
             // bật tính năng xác định thẻ có bị giả mạo hoặc sao chép hoặc ghi đè thông tin hay không. Mặc định false
             // Giá trị xác thực Active Authentication tại ICNFCSaveData.shared().statusActiveAuthentication
             // Giá trị xác thực Chip Authentication tại ICNFCSaveData.shared().statusChipAuthentication
-            objICMainNFCReader.isEnableCheckChipClone = true
+            objICMainNFCReader.isEnableVerifyChip = true
             
             
             
@@ -910,7 +878,7 @@ extension ViewController {
             
             
             // Thực hiện gọi phương thức đọc thông tin thẻ căn cước gắn chip bằng công nghệ NFC
-            objICMainNFCReader.startNFCReaderOutSide()
+            // objICMainNFCReader.startNFCReaderOutSide()
         } else {
             // Fallback on earlier versions
         }
@@ -1046,11 +1014,6 @@ extension ViewController: ICMainNFCReaderDelegate {
     // Phương thức khi người dùng nhấn xác nhận thoát SDK
     func icNFCMainDismissed() {
         print("Close")
-    }
-    
-    func icNFCCardReader(_ state: ICNFCReaderState, progress: Int, error: String) {
-        print("state = \(state)")
-
     }
     
     func icNFCCardReaderGetResult() {
